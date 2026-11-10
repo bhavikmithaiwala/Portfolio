@@ -1,0 +1,90 @@
+export const jobs = [
+  {
+    role: "Full-Stack Developer",
+    co: "ShareCharge",
+    when: "Sep 2025 – Present",
+    loc: "Montreal, QC",
+    pts: [
+      "Built and maintained a peer-to-peer EV charging marketplace end to end, across web and mobile, using React, React Native, TypeScript, Node.js and MongoDB.",
+      "Developed responsive interfaces for charger discovery, search, booking management and availability tracking, using reusable components and state management.",
+      "Created Node.js and Express.js backend services and RESTful APIs for registration, secure authentication, bookings, transactions and data validation.",
+      "Integrated the Stripe and Wise APIs to support payments, payouts and financial operations with secure sessions.",
+      "Implemented real-time booking status and charger availability updates using WebSockets and Socket.IO.",
+      "Improved reliability through API optimization, automated testing, code reviews and CI/CD, and am building an AI-powered agentic workflow to automate manual charger approvals.",
+    ],
+    tags: ["React", "React Native", "TypeScript", "Node.js", "MongoDB", "Socket.IO", "Stripe"],
+  },
+  {
+    role: "Application Developer",
+    co: "L&T Technology Services",
+    when: "Jan – Apr 2024",
+    loc: "Gujarat, India",
+    pts: [
+      "Designed and developed an On-Premises Access Request Management System with React.js, Node.js and SQL for employee and intern onboarding.",
+      "Built responsive interfaces that simplified access request submission, approval tracking and administrative tasks.",
+      "Developed backend services and REST APIs for workflow automation and data processing.",
+      "Implemented secure authentication and Role-Based Access Control (RBAC) to protect data and support compliance.",
+      "Created a multi-step approval workflow that reduced manual effort, and took part in debugging, testing and code reviews in an Agile team.",
+    ],
+    tags: ["React", "Node.js", "SQL", "RBAC"],
+  },
+  {
+    role: "Web Developer",
+    co: "Jemistry Info Solutions",
+    when: "May – Jun 2022",
+    loc: "Surat, India",
+    pts: [
+      "Developed a tourism and vacation booking platform using AngularJS, JavaScript, HTML5 and CSS3.",
+      "Built responsive interfaces and reusable UI components that work across devices and browsers.",
+      "Integrated RESTful APIs for smooth data flow between the frontend and backend, supporting intuitive navigation and booking workflows.",
+      "Assisted with secure payment integrations that improved transaction reliability and user trust.",
+      "Improved performance through debugging, API troubleshooting and cross-browser fixes, and supported deployments.",
+    ],
+    tags: ["AngularJS", "JavaScript", "REST APIs"],
+  },
+];
+
+export const edu = [
+  {
+    name: "Master of Engineering",
+    deg: "Master of Engineering in Computer Engineering",
+    school: "University of Guelph",
+    when: "Sep 2024 – Sep 2025",
+    d: "Completed a one-year graduate program in Computer Engineering with a final grade of 80.33%. The program focused on artificial intelligence and information retrieval, building strong foundations in search algorithms, data processing, software design, programming techniques and data analysis.",
+    course: [
+      "Programming for MEng",
+      "Information Retrieval",
+      "Introduction to Artificial Intelligence",
+    ],
+    focus: [
+      "AI Fundamentals",
+      "Information Retrieval Systems",
+      "Search Algorithms",
+      "Data Processing",
+      "Software Design",
+      "Algorithmic Problem-Solving",
+      "Data Analysis",
+    ],
+  },
+  {
+    name: "Bachelor of Technology",
+    deg: "Bachelor of Technology in Computer Engineering",
+    school: "CHARUSAT University",
+    when: "2020 – 2024",
+    d: "Completed a four-year undergraduate degree in Computer Engineering with a GPA of 8.51/10. Built a solid base in algorithm design, relational database design, object-oriented design and web application development, which became the foundation for my work as a full-stack developer.",
+    course: [
+      "Data Structures & Algorithms",
+      "Database Management Systems",
+      "Software Engineering",
+      "Object-Oriented Programming",
+      "Operating Systems",
+      "Advanced Web Technologies",
+    ],
+    focus: [
+      "Algorithm Design",
+      "Relational Database Design",
+      "Object-Oriented Design",
+      "Web Application Development",
+    ],
+  },
+];

@@ -6,7 +6,7 @@ export default function Navbar({ dark, onToggleTheme }) {
     <div className="top">
       <div className="wrap">
         <a href="#top" className="logo">
-          <img className="logoImg" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" />
+          <img className="logoImg" src={`${import.meta.env.BASE_URL}logo-2.png`} alt="Logo" />
           <span className="logoText">Bhavik Mithaiwala<span>.</span></span>
         </a>
         <div className="links">

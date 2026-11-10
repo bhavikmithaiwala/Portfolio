@@ -261,3 +261,7 @@ footer{margin-top:56px;padding:26px 0;border-top:1px solid var(--line);text-alig
   width: 80px !important;
   height: 80px !important;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}

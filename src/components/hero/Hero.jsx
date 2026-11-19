@@ -9,6 +9,7 @@ export default function Hero() {
   return (
     <div className="heroBox" id="top">
       <div className="hero rise">
+        <img className="stick" src={`${import.meta.env.BASE_URL}logo-2.webp`} alt="" width="170" height="145" />
         <span className="welcome">👋 Welcome to my portfolio</span>
         <h1>Hi, I’m <span className="grad">Bhavik Mithaiwala</span></h1>
         <Typewriter />

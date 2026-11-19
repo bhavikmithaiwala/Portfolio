@@ -1,8 +1,10 @@
 import { EMAIL } from "../../data/profile";
+import Peek from "../common/Peek";
 
 export default function BookCall() {
   return (
     <div className="book">
+      <Peek pose="wave" className="peekContact" />
       <span className="tg">Let’s find a time</span>
       <h3>Book a 1:1 Intro Call</h3>
       <p>Talk through your idea, technical roadmap or an opportunity to work together.</p>

@@ -1,21 +1,18 @@
 # Bhavik Mithaiwala – Portfolio (React + Vite)
 
+Corkboard design. Content lives in `src/data/*.js`, styles in `src/index.css`.
+
 ## Run locally
-1. Install Node.js 18+ from https://nodejs.org
-2. In this folder run:
-   npm install
-   npm run dev
-3. Open the link shown (usually http://localhost:5173)
+    npm install
+    npm run dev
 
-## Build for production
-   npm run build      (output goes to /dist)
-   npm run preview    (test the production build)
+## Deploy to GitHub Pages
+    npm run deploy        (builds, then publishes dist/ with gh-pages)
 
-## Edit your content
-All content and components are in src/App.jsx, styles in src/index.css.
-- GitHub link: set GITHUB near the top of src/App.jsx
-- Photo: put photo.jpg in /public and set PHOTO = "/photo.jpg"
-- Resume: replace public/Bhavik_Mithaiwala_Resume.pdf
+`vite.config.js` sets `base: "/Portfolio/"`; keep it in sync with the repo name.
 
-## Deploy (free)
-Vercel or Netlify: push to GitHub, import the repo, build command "npm run build", output folder "dist".
+## Edit content
+- Jobs and education: `src/data/journey.js`
+- Projects: `src/data/projects.js`  · Skills: `src/data/skills.js`
+- Name, links, phone, roles, experience periods: `src/data/profile.js`
+- Photo: `public/pm.webp` · Resume: `public/Bhavik_Mithaiwala_Resume.pdf`

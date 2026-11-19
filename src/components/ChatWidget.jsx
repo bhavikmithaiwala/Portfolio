@@ -3,7 +3,7 @@ import { X, Send, Maximize2, Minimize2 } from 'lucide-react';
 import { startChatSession } from '../services/aiService';
 import ReactMarkdown from 'react-markdown';
 
-const robotIcon = `${import.meta.env.BASE_URL}AMA.png`;
+const robotIcon = `${import.meta.env.BASE_URL}AMA.webp`;
 
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ export default function ChatWidget() {
     if (!chatSession) {
       setMessages((prev) => [
         ...prev,
-        { text: "System Error: AI session failed to start. Please check your .env.local file for the API key.", sender: 'ai' }
+        { text: "Sorry, the assistant isn't available right now. Please email me instead.", sender: 'ai' }
       ]);
       return;
     }
@@ -68,7 +68,7 @@ export default function ChatWidget() {
               <img
                 src={robotIcon}
                 alt="Robot Avatar"
-                style={{ width: '28px', height: '28px', borderRadius: '50%', border: '1px solid white' }}
+                style={{ width: '28px', height: '28px', borderRadius: '50%', border: '2px solid #1E1510' }}
               />
               <h3 style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>Ask about Bhavik</h3>
             </div>
@@ -77,14 +77,14 @@ export default function ChatWidget() {
               <button
                 onClick={() => setIsExpanded((prev) => !prev)}
                 aria-label={isExpanded ? 'Shrink chat' : 'Expand chat'}
-                style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', padding: 0 }}
+                style={{ background: 'none', border: 'none', color: '#1E1510', cursor: 'pointer', padding: 0 }}
               >
                 {isExpanded ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
               </button>
               <button
                 onClick={() => setIsOpen(false)}
                 aria-label="Close chat"
-                style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', padding: 0 }}
+                style={{ background: 'none', border: 'none', color: '#1E1510', cursor: 'pointer', padding: 0 }}
               >
                 <X size={20} />
               </button>
@@ -123,8 +123,8 @@ export default function ChatWidget() {
       )}
 
       {!isOpen && (
-        <button onClick={() => setIsOpen(true)} className="chat-toggle-btn">
-          <img src={robotIcon} alt="Chat Robot" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <button onClick={() => setIsOpen(true)} className="chat-toggle-btn" aria-label="Open chat: ask about Bhavik">
+          <img src={robotIcon} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </button>
       )}
     </div>

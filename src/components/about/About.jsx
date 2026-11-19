@@ -5,14 +5,14 @@ export default function About() {
   return (
     <div className="aboutBox" id="about">
       <div className="about">
-        <span className="badge">🛡 Identity & Background</span>
+        {/* <span className="badge">🛡 Identity & Background</span> */}
         <h2>About <span className="grad">Me</span></h2>
         <p className="tagline">Developer with a passion for building products people actually want to use</p>
 
         <div className="agrid">
           <div className="pcard">
             <div className="photo">
-              {PHOTO ? <img src={PHOTO} alt="Bhavik Mithaiwala" /> : <span className="init">B</span>}
+              {PHOTO ? <img src={PHOTO} alt="Bhavik Mithaiwala" width="760" height="737" decoding="async" /> : <span className="init">B</span>}
               <span className="pos">⌨ Full-Stack Developer</span>
             </div>
           </div>

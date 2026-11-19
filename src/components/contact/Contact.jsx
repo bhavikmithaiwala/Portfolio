@@ -12,13 +12,16 @@ export default function Contact() {
   return (
     <div className="aboutBox" id="contact" style={{ marginTop: 56 }}>
       <div className="about">
-        <span className="badge">✨ Initiate collaboration & inquiries</span>
-        <h2>Get in <span className="grad">Touch</span></h2>
-        <p className="tagline" style={{ maxWidth: 560, margin: "0 auto 18px" }}>
-          Ready to collaborate? Let’s discuss your project, product ideas or full-time engineering opportunities.
-        </p>
-        <div className="pillrow">
-          <span className="dot" /> Open to full-time roles across Canada <span>·</span> Let’s build something together
+        <div className="nhWrap">
+          <div className="nhTop">
+            <span className="badge">✨ Initiate collaboration & inquiries</span>
+            <h2><span className="nhA">Get in</span><span className="nhB">Touch</span></h2>
+          </div>
+          <div className="nhCard">
+            <p>
+              Ready to collaborate? Let’s discuss your project, product ideas or full-time engineering opportunities.
+            </p>
+          </div>
         </div>
 
         <div className="cgrid">
@@ -36,7 +39,7 @@ export default function Contact() {
             <ContactCard
               icon="📍"
               label="Base location"
-              value="Ottawa, Ontario, Canada"
+              value="Canada"
               aside={<span className="tz">Eastern Time</span>}
             >
               <span>Open to roles across Canada</span>
@@ -48,6 +51,10 @@ export default function Contact() {
             <BookCall />
             <SocialLinks />
           </div>
+        </div>
+
+        <div className="pillrow nhCap">
+          <span className="dot" /> Open to full-time roles across Canada <span>·</span> Let’s build something together
         </div>
 
         <Standards />

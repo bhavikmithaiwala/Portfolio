@@ -8,7 +8,7 @@ import Skills from "./components/skills/Skills";
 import Competencies from "./components/skills/Competencies";
 import Contact from "./components/contact/Contact";
 import useTheme from "./hooks/useTheme";
-import ChatWidget from "./components/ChatWidget";
+
 
 function App() {
   const [dark, toggleTheme] = useTheme();
@@ -17,6 +17,7 @@ function App() {
     // Changed this line to be a proper div with a className
     <div className="relative min-h-screen">
       <Navbar dark={dark} onToggleTheme={toggleTheme} />
+      <main>
       <Hero />
       <About />
       <Journey />
@@ -28,8 +29,8 @@ function App() {
       </div>
 
       <Contact />
+      </main>
       <Footer />
-      <ChatWidget />
     {/* Changed the closing tag from </> to </div> */}
     </div>
   );
